@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" onload="intervall();">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><h1>MADE BY ZARHOUNE</h1> </div>
+            <ul class="nav-links">
+                <li><a href="" id="home">HOME</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+            <div class="burger" >
+                <div class="l"></div>
+                <div class="ll"></div>
+                <div class="lll"></div> 
+            </div>
+   
+        </nav>
+    </div>
+    <div class="centered">
+
+        <H1>HI IM EL-HOUSSINE, I'M A FULL-STACK WEB DEVLOPER</H1>
+        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. suscipit aliquid asperiores sectetur adipisicing elit. suscipit aliquid asperiores necessitatibus reiciendis. A doloremque repellat ratione.</P>
+        <input type="button" value="SUBSCRIBE">
+        <input type="button" value="PROJECTS">
+
+    </div>
+    <div class="menu">
+        <ul>
+            <li>Acceuil</li>
+            <li>Abonnement</li>
+            <li>Historique</li>
+            <li>Settings</li>
+            <li>Help</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+ 
+ 
+    
+  <script src="menu.js">
+      function change (){ 
+  var y = window.pageYOffset;
+  if( y > 75){
+    nav.style.background = "rgb(0, 161, 35)" ;
+  };
+}; 
+
+window.addEventListener('scroll' , change) ;
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+*{
+    padding: 0%;
+    margin: 0em;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    width: 100%;
+    font-size: 95%;
+    overflow-x: hidden;
+    scrollbar-width: 0.2CM;
+    scrollbar-color: rgb(2, 24, 85) ;
+
+
+}
+.container{
+    height: 100vh;
+    background-position: center;
+    background-position: top;
+    background-image: url('https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    
+
+}
+
+
+nav{
+    height: 14vh;
+    width: 90%;
+    transform: translateX(5%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10001;
+    
+
+
+}
+nav ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    list-style: none;  
+    transform: translateX(5CM);
+}
+nav li {
+    line-height: 12vh;
+    font-size: 80%;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 248, 248);
+    padding: 8px 30px;
+    border-radius: 3px;
+    border: white solid 1px;
+    margin: 10px;    transition: 0.4s;
+
+
+
+    
+}
+
+
+nav a:hover{
+    color: rgb(2, 24, 85);
+    background-color: white;
+    font-weight: bold;
+    font-size: 110%;
+
+    transition: 0.4s;
+
+}
+nav .logo {
+    
+    line-height: 14vh;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    font-size: 16px;
+
+
+}
+.burger{
+    transform: translateX(3cm);
+    cursor: pointer;
+    
+
+}
+
+
+.burger div{
+    width: 20px;
+    height: 2px ;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: transform 0.4s ease;
+
+}
+.menu{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20vh;
+    right: 0%;
+    height: 70vh;
+    width: 30%;  
+    transform: translateX(100%);
+    background-blend-mode: darken;
+    transition: transform 0.5s ease;
+    border-left: 1px solid whitesmoke ;
+    border-bottom: 1px solid whitesmoke ;
+    border-top: 1px solid whitesmoke ;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+
+}
+.menu-active{
+    transform: translateX(0%);
+
+ 
+}
+.active .l  {
+    position: absolute;
+    margin-bottom: -5px; 
+    transform: rotate(45deg);
+   
+}
+.active .lll {
+    transform: rotate(-45deg);
+
+    
+}
+.active .ll{
+    display: none;
+}
+.menu ul {
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+
+}
+.menu ul li {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: solid 1px whitesmoke;
+    padding: 5px 50px;
+
+}
+
+@keyframes movin {
+    from{
+        opacity: 0;
+        transform: translateX(40px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+
+.centered {
+    position: absolute;
+    top:  45%;
+    left: 10%;
+    text-align: center;
+    width: 80%;
+    animation:   back 0.5s ease forwards;
+    color: aliceblue;
+    
+ 
+    
+
+}
+.centered p {
+    margin: 10px;
+    font-size: 14px;
+
+
+}
+.centered h1 {
+    font-size: 25px;
+}
+@keyframes width {
+    from{
+        width: 80%;
+    }
+    to {
+        width: 60%;
+    }
+}
+.shorted {
+    animation:   width 1s ease forwards;
+}
+
+@keyframes back {
+    from{
+        width: 60%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+
+
+
+.centered input {
+
+    padding: 15px 45px;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 102%;
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 4px;
+    transition: 0.4s;
+    cursor: pointer;
+
+
+}
+.centered input:hover{
+    color: rgb(2, 24, 85);
+    background-color: white;
+    font-size: 111%;
+    transition: 0.3s;
+    font-weight: bold;
+}
+#home{
+    color: rgb(2, 24, 85);
+    background-color: white;
+    font-weight: bold;
+    font-size: 102%;
+
+    
+
+}
